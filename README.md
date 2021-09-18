@@ -1,4 +1,9 @@
 # Recon-sh
+![OS](https://img.shields.io/badge/OS-GNU%2FLinux-red?style=flat&logo=linux)
+![GitHub](https://img.shields.io/github/license/rlyonheart/recon-sh?ystyle=flat)
+![Lines of code](https://img.shields.io/tokei/lines/github/rlyonheart/recon-sh)
+![GitHub repo size](https://img.shields.io/github/repo-size/rlyonheart/recon-sh)
+
 Lightweight bash reconnaissance tool
 
 # Installation & Usage
