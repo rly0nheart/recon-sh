@@ -1,5 +1,5 @@
 # Recon-sh
-Bash reconnaissance script
+Lightweight bash reconnaissance tool
 
 # Installation & Usage
 > <code>$ pkg install curl git</code>
