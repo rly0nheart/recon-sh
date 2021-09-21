@@ -6,10 +6,11 @@ echo "
 ▐▀▀▄ ▐▀▀▪▄██ ▄▄ ▄█▀▄ ▐█▐▐▌   ▄▀▀▀█▄██▀▐█
 ▐█•█▌▐█▄▄▌▐███▌▐█▌.▐▌██▐█▌   ▐█▄▪▐███▌▐▀
 .▀  ▀ ▀▀▀ ·▀▀▀  ▀█▄▀▪▀▀ █▪ ▀  ▀▀▀▀ ▀▀▀ ·
-2 in 1 shell reconnaisance tool
+3 in 1 shell reconnaisance tool
 ________________________________________
 1. GeoIP
 2. HTTPHeaders
+3. Subnet Calculator
 "
 read -p "Enter choice: " choice
 
@@ -25,12 +26,22 @@ function httph(){
 	curl "https://api.hackertarget.com/httpheaders/?q=$target"
 }
 
+function subnetcalc(){
+	clear
+	read -p "target (cird format or subnet mask): " target
+	curl "https://api.hackertarget.con/subnetcalc/?q=$target"
+}
+
 if [[ $choice == "1" ]]; then
     geoip
 
 elif [[ $choice == "2" ]]; then
     httph
 
+elif [[ $choice == "3" ]]; then
+    subnetcalc
+
 else
     echo "invalid choice: $choice"
 fi
+
