@@ -23,5 +23,6 @@ Lightweight bash reconnaissance tool
 # Features
 * Geo IP
 * HTTP Headers
+* Subnet Calculator
 
 **Note**: *More features coming soon*
