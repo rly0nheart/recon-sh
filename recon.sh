@@ -1,4 +1,4 @@
-#!/bin/bash
+m#!/bin/bash
 
 echo "
 ▄▄▄  ▄▄▄ . ▄▄·        ▐ ▄    .▄▄ ·  ▄ .▄
@@ -33,11 +33,12 @@ function subnetcalc(){
 	curl "https://api.hackertarget.con/subnetcalc/?q=$target"
 }
 
-function google_dork(){
+function googledork(){
     clear
     read -p "$dork query: " query
-    search = "https://www.google.com/search?q=$query"
+    search="https://www.google.com/search?q=$query"
     curl "https://api.hackertarget.com/pagelinks/?q=$search"
+}
 
 if [[ $choice == "1" ]]; then
     geoip
@@ -48,8 +49,8 @@ elif [[ $choice == "2" ]]; then
 elif [[ $choice == "3" ]]; then
     subnetcalc
 
-elif [[ $choice == "3" ]]; then
-    google_dork
+elif [[ $choice == "4" ]]; then
+    googledork
 
 else
     echo "invalid choice: $choice"
