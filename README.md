@@ -24,5 +24,6 @@ Lightweight bash reconnaissance tool
 * Geo IP
 * HTTP Headers
 * Subnet Calculator
+* Google Dork(lite)
 
 **Note**: *More features coming soon*
