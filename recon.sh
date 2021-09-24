@@ -35,7 +35,7 @@ function subnetcalc(){
 
 function google_dork(){
     clear
-    read -p "$dork query$> " query
+    read -p "$dork query: " query
     search = "https://www.google.com/search?q=$query"
     curl "https://api.hackertarget.com/pagelinks/?q=$search"
 
