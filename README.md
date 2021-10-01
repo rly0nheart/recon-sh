@@ -6,8 +6,6 @@
 
 Lightweight bash reconnaissance tool
 
-# Installation & Usage
-> <code>$ pkg install curl git</code>
 
 **Clone it**:
 > <code>$ git clone https://github.com/rlyonheart/recon-sh.git</code>
@@ -24,5 +22,6 @@ Lightweight bash reconnaissance tool
 * HTTP Headers
 * Subnet Calculator
 * Google Dork(lite)
+* Pagelinks extractor
 
 **Note**: *More features coming soon*
