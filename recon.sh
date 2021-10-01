@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 echo "
@@ -12,6 +13,7 @@ ________________________________________
 2. HTTPHeaders
 3. Subnet Calculator
 4. Google dork(lite)
+5. Pagelinks extractor
 "
 read -p "Enter choice: " choice
 
@@ -35,11 +37,16 @@ function subnetcalc(){
 
 function googledork(){
     clear
-    read -p "$dork query: " query
+    read -p "dork query: " query
     search="https://www.google.com/search?q=$query"
     curl "https://api.hackertarget.com/pagelinks/?q=$search"
 }
 
+function pagelinks(){
+	clear
+	read -p "target url: " target
+	curl "https://api.hackertarget.com/pagelinks/?q=$target"
+}
 if [[ $choice == "1" ]]; then
     geoip
 
@@ -51,6 +58,9 @@ elif [[ $choice == "3" ]]; then
 
 elif [[ $choice == "4" ]]; then
     googledork
+    
+elif [[ $choice == "5" ]]; then
+    pagelinks
 
 else
     echo "invalid choice: $choice"
